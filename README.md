@@ -5,6 +5,7 @@ To deploy this project run
 
 clone the project in your device
 
+
 open the project folder and open terminal/cmd inside the directory
 i.e. react-curd-application/
 
@@ -48,4 +49,4 @@ node app.js
 
 ## now that the both client and server is running it should look like following screenshoot.
 ![Screenshot (2)](https://user-images.githubusercontent.com/110169184/229789839-2661cd34-92b2-4e08-b35c-5dd5384ea806.png)
-
+### Run the server first then client to avoid client server connection issue
