@@ -46,5 +46,6 @@ run this command to start the connection
 node app.js
 ```
 
-now that the both client and server is running it should look like following screenshoot.
+## now that the both client and server is running it should look like following screenshoot.
+![Screenshot (2)](https://user-images.githubusercontent.com/110169184/229789839-2661cd34-92b2-4e08-b35c-5dd5384ea806.png)
 
