@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
+import { updateddata } from "./context/ContextProvider";
 
 const Edit = () => {
   // const [getuserdata, setUserdata] = useState([]);
   // console.log(getuserdata);
+
+  // eslint-disable-next-line no-unused-vars
+  const {updatedata, setUpdateddata} = useContext(updateddata)
 
   const navigate = useNavigate("");
 
@@ -78,6 +82,7 @@ const Edit = () => {
     }else{
       alert("Data Added");
       navigate("/");
+      setUpdateddata(data2);
     }
 
   }

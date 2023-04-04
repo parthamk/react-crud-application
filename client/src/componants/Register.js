@@ -1,6 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { adddata } from "./context/ContextProvider";
+
+
 const Register = () => {
+
+  // eslint-disable-next-line no-unused-vars
+  const {udata, setUdata} = useContext(adddata);
 
   const navigate = useNavigate();
 
@@ -53,9 +59,10 @@ const Register = () => {
       alert("error");
       console.log("error ");
     } else {
-      alert("data added");
-      console.log("data added");
+      // alert("data added");
       navigate("/")
+      setUdata(data);
+      console.log("data added");
     }
   };
 
